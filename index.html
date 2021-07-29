@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html class ="nomargin">
+
+ <head>
+     <title>HW2 Gallery </title>
+     <link rel ="stylesheet" href="style.css">
+	 <meta name="viewport" content="width=device-width, initial scale=1">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ </head>
+
+
+ <body class="nomargin">
+   
+    <header>
+     <div class="navbar">
+       <h2 class="navbartext">Design by KER WEN YING</h2>
+     </div>
+	</header>
+ 
+    <section id="background">
+      <div class="backgroundImage">
+        <div class="backgroundText">
+	      <p class="bigtext jello">Every Moments Matter<br>
+		  <span class="smalltext">Scroll for more!</p>
+		 </div>
+       </div>
+	</section>
+ 
+    
+      <div class="flex-containerphoto">
+        <div class="gallery">  <img src="image/thumb/personal1.jpg" onclick="openModal();currentSlide(1)"> </div>
+		<div class="gallery">  <img src="image/thumb/personal2.jpg" onclick="openModal();currentSlide(2)"> </div>
+		<div class="gallery">  <img src="image/thumb/personal3.jpg" onclick="openModal();currentSlide(3)"> </div>
+		<div class="gallery">  <img src="image/thumb/personal4.jpg" onclick="openModal();currentSlide(4)"> </div>
+		<div class="gallery">  <img src="image/thumb/travel.jpg"    onclick="openModal();currentSlide(5)"> </div>
+		<div class="gallery">  <img src="image/thumb/travel2.jpg"   onclick="openModal();currentSlide(6)"> </div>
+		<div class="gallery">  <img src="image/thumb/travel3.jpg"   onclick="openModal();currentSlide(7)"> </div>
+		<div class="gallery">  <img src="image/thumb/travel4.jpg"   onclick="openModal();currentSlide(8)"> </div>
+		<div class="gallery">  <img src="image/thumb/travel5.jpg"    onclick="openModal();currentSlide(9)"> </div>
+		<div class="gallery">  <img src="image/thumb/travel6.jpg"    onclick="openModal();currentSlide(10)"> </div>
+		<div class="gallery">  <img src="image/thumb/friend1.jpg"    onclick="openModal();currentSlide(11)"> </div>
+		<div class="gallery">  <img src="image/thumb/friend2.jpg"    onclick="openModal();currentSlide(12)"> </div>		
+		<div class="gallery">  <img src="image/thumb/friend3.jpg"    onclick="openModal();currentSlide(13)"> </div>
+		<div class="gallery">  <img src="image/thumb/friend4.jpg"    onclick="openModal();currentSlide(14)"> </div>	
+        <div class="gallery">  <img src="image/thumb/friend5.jpg"    onclick="openModal();currentSlide(15)"> </div>
+		<div class="gallery">  <img src="image/thumb/friend7.jpg"    onclick="openModal();currentSlide(16)"> </div>
+		<div class="gallery">  <img src="image/thumb/friend8.jpg"    onclick="openModal();currentSlide(17)"> </div>	
+		<div class="gallery">  <img src="image/thumb/food1.jpg"    onclick="openModal();currentSlide(18)"> </div>	
+		<div class="gallery">  <img src="image/thumb/food2.jpg"    onclick="openModal();currentSlide(19)"> </div>		
+		<div class="gallery">  <img src="image/thumb/food5.jpg"    onclick="openModal();currentSlide(20)"> </div>
+	</div>
+ 
+      
+	  <div id="myModal" class="modal">
+	     <span class="close cursor" onclick="closeModal()">&times;</span>
+         <div>
+	      <div class = "mySlides fade" ><a href = "image/full/personal1.jpg" download> <img class="imgSlideshow" src="image/full/personal1.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/personal2.jpg" download> <img class="imgSlideshow" src="image/full/personal2.jpg"></a></div>
+	      <div class = "mySlides fade" ><a href = "image/full/personal3.jpg" download> <img class="imgSlideshow" src="image/full/personal3.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/personal4.jpg" download> <img class="imgSlideshow" src="image/full/personal4.jpg"></a></div>		   
+	      <div class = "mySlides fade" ><a href = "image/full/travel.jpg" download> <img class="imgSlideshow" src="image/full/travel.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/travel2.jpg" download> <img class="imgSlideshow" src="image/full/travel2.jpg"></a></div>			   
+		  <div class = "mySlides fade" ><a href = "image/full/travel3.jpg" download> <img class="imgSlideshow" src="image/full/travel3.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/travel4.jpg" download> <img class="imgSlideshow" src="image/full/travel4.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/travel5.jpg" download> <img class="imgSlideshow" src="image/full/travel5.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/travel6.jpg" download> <img class="imgSlideshow" src="image/full/travel6.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/friend1.jpg" download> <img class="imgSlideshow" src="image/full/friend1.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/friend2.jpg" download> <img class="imgSlideshow" src="image/full/friend2.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/friend3.jpg" download> <img class="imgSlideshow" src="image/full/friend3.jpg"></a></div>
+          <div class = "mySlides fade" ><a href = "image/full/friend4.jpg" download> <img class="imgSlideshow" src="image/full/friend4.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/friend5.jpg" download> <img class="imgSlideshow" src="image/full/friend5.jpg"></a></div>	
+		  <div class = "mySlides fade" ><a href = "image/full/friend7.jpg" download> <img class="imgSlideshow" src="image/full/friend7.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/friend8.jpg" download> <img class="imgSlideshow" src="image/full/friend8.jpg"></a></div>	
+          <div class = "mySlides fade" ><a href = "image/full/food1.jpg" download> <img class="imgSlideshow" src="image/full/food1.jpg"></a></div>
+		  <div class = "mySlides fade" ><a href = "image/full/food2.jpg" download> <img class="imgSlideshow" src="image/full/food2.jpg"></a></div>				  
+          <div class = "mySlides fade" ><a href = "image/full/food5.jpg" download> <img class="imgSlideshow" src="image/full/food5.jpg"></a></div>
+		  
+		   <a class="prev"  onclick="plusSlides(-1)">&#10094;</a>
+		   <a class="next"  onclick="plusSlides(1) ">&#10095;</a>
+		   
+		 </div>
+		 
+		 <div class="footer">
+		   <audio id="audio" preload="auto" controls="" tabindex="0" type="audio/mpeg">
+             <source type="audio/mp3" src="res/La Vie En Rose.mp3">
+           </audio>
+     
+	       <span class="footerText"> Music Controllers </span>
+		   
+		   <section id="playlist">
+             <span><a class="active" href="res/La Vie En Rose.mp3">La Vie En Rose  &emsp;  / </a></span>
+			 <span><a href="res/Dreams.mp3">&emsp; Dreams  &emsp;  / </a>&emsp;</span>
+			 <span><a href="res/Happy life.mp3">Happy Life</a>&emsp;</span>
+           </div>
+		   </section>
+        </div>
+
+    <script src="script.js"></script>		
+		 
+ 
+ </body>
+ </html>
